@@ -1,11 +1,13 @@
 <script>
-
+  import DcHeader from './components/DcHeader.vue';
 </script>
 
 <template>
-  <div>
-    <h3>Ciao</h3>
-  </div>
+  
+  <header>
+    <DcHeader />
+  </header>  
+  
 
 </template>
 
