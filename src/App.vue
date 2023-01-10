@@ -1,6 +1,7 @@
 <script >
 import DcHeader from './components/DcHeader.vue';
 import DcMain from './components/DcMain.vue';
+import DcCards from './components/DcCards.vue';
 import DcFooter from './components/DcFooter.vue';
 import BlueBand from './components/BlueBand.vue';
 
@@ -8,6 +9,7 @@ export default {
   components: {
     DcHeader,
     DcMain,
+    DcCards,
     DcFooter,
     BlueBand,
   }
@@ -23,6 +25,7 @@ export default {
 
   <main>
     <DcMain />
+    <DcCards />
     <BlueBand />
   </main>
 
