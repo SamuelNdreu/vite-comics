@@ -94,7 +94,7 @@ export default {
 <template>
         <section class="top-footer">
         <div class="container">
-            <div class="footer-links">
+            <div class="footer-links ">
                 <ul>
                     <li><h2>DC comics</h2></li>
                     <li v-for="items in dcComics">{{ items.text }}</li>

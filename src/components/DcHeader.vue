@@ -50,7 +50,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="container">
         <div class="container">
             <div class="img-wrapper">
                 <img src="../assets/img/dc-logo.png" alt="">

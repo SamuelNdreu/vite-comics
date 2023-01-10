@@ -1,36 +1,11 @@
 <script>
-export default {
-    name: 'AppMain',
-    data () {
-        bluebarList: [
-            {
-                image: 'buy-comics-digital-comics.png',
-                text:  'DIGITAL COMICS'
-            },
-            {
-                image: 'buy-comics-merchandise.png',
-                text:  'DC MERCHANDISE'
-            },
-            {
-                image: 'buy-comics-subscription-png',
-                text:  'SUBSCRIPTION'
-            },
-            {
-                image: 'buy-comics-shop-locator.png',
-                text:  ' COMICS SHOP LOCATOR'
-            },
-            {
-                image:'buy-dc-power-visa.png',
-                text: 'DC POWER VISA'
-            }
-        ]
-    }
-}
+ 
+    
 </script>
 
 <template>
     <div class="wrapper-top">
-        <div class="container">
+        <div class="my_container">
             <h1>Content goes here</h1>
         </div>
         <div class="wrapper-bottom">
@@ -56,10 +31,13 @@ export default {
         width: 100%;
         height: 110px;
         background-color: $main-dark-bg;
+        display: flex;
+        justify-content: center;
     }
-     h1 {
+    h1 {
         display: flex;
         align-items: center;
+        text-align: center;
         color: rgb(235, 16, 16);
     }
 
