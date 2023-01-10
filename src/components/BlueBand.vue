@@ -13,7 +13,7 @@ export default {
                         text: 'DC MERCHANDISE'
                     },
                     {
-                        image: 'buy-comics-subscription-png',
+                        image: 'buy-comics-subscriptions.png',
                         text: 'SUBSCRIPTION'
                     },
                     {
@@ -21,7 +21,7 @@ export default {
                         text: ' COMICS SHOP LOCATOR'
                     },
                     {
-                        image: 'buy-dc-power-visa.png',
+                        image: 'buy-dc-power-visa.svg',
                         text: 'DC POWER VISA'
                     }
                 ]
@@ -42,7 +42,7 @@ export default {
     <section class="banner">
         <div class="my_container">
             <div class="banner-element" v-for="bannerElement in bluebarList">
-                <img :src="getImagePath(bannerElement)" :alt="`${bannerElement.text}\'s image`">
+                <img :src="getImagePath(bannerElement.image)" :alt="`${bannerElement.text}\'s image`">
                 <h4>
                     {{ bannerElement.text }}
                 </h4>
@@ -75,7 +75,7 @@ section.banner {
         display: flex;
         align-items: center;
         margin-left: 2rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
         color: white;
 
     }
