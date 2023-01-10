@@ -122,13 +122,13 @@ export default {
 
 .comics-wrapper {
     background-color: #1c1c1c;
-    height: 50rem;
+    height: 55rem;
     color: white;
+    max-height: 100%;
 }
 
 .comic-card {
     width: calc((100% / 6) - 2rem);
-    
     
     margin-left: 1.5rem;
 }
@@ -144,9 +144,9 @@ h1 {
     background-color: #0282f9;
     text-transform: uppercase;
     position: relative;
-    bottom: 400px;
-    left: 200px;
-    font-size: 1rem;
+    bottom: 440px;
+    left: 170px;
+    font-size: 0.8rem;
 }
 
 h2 {
@@ -158,6 +158,6 @@ h2 {
     width: 150px;
     position: relative;
     left: 58rem;
-    bottom: 5rem;
+    bottom: 4rem;
 }
 </style>

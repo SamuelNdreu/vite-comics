@@ -13,15 +13,17 @@ export default {
     <div class>
         <div class="img-wrapper">
             <img :src="thumbnail">
+            <h2>{{ series }}</h2>
+             <p>{{ price }}</p>
+
         </div>
-        <p>{{ series }}</p>
     </div>
 </template>
 
 <style lang="scss">
 .img-wrapper {
     background-color: #1c1c1c;
-
+    font-size: 0.7rem;
     overflow: hidden;
 }
 </style>    
