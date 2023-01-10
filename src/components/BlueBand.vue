@@ -1,53 +1,66 @@
 <script>
 export default {
+    name: 'AppMain',
     data() {
-        return {
-            blueList: [
-                {
-                    image: '/img/buy-comics-digital-comics.png',
-                    text: 'digital comics'
-                },
-                {
-                    image: '/img/buy-comics-merchandise.png',
-                    text: 'dc merchandise'
-                },
-                {
-                    image: '/img/buy-comics-subscriptions.png',
-                    text: 'subscription'
-                },
-                {
-                    image: '/img/buy-comics-shop-locator.png',
-                    text: 'comic shop locator'
-                },
-                {
-                    image: '/img/buy-dc-power-visa.svg',
-                    text: 'DC power visa'
-                },
-            ]
-        }
+        bluebarList: [
+            {
+                image: 'buy-comics-digital-comics.png',
+                text: 'DIGITAL COMICS'
+            },
+            {
+                image: 'buy-comics-merchandise.png',
+                text: 'DC MERCHANDISE'
+            },
+            {
+                image: 'buy-comics-subscription-png',
+                text: 'SUBSCRIPTION'
+            },
+            {
+                image: 'buy-comics-shop-locator.png',
+                text: ' COMICS SHOP LOCATOR'
+            },
+            {
+                image: 'buy-dc-power-visa.png',
+                text: 'DC POWER VISA'
+            }
+        ]
     },
 }
 </script>
 
 
 <template>
-    <div class="wrapper">
-        <div class="container">
-            <ul class="list flex">
-                <li v-for="item in blueList" class="flex">
-                    <img :src='item.image' :alt='item.text'><span>{{ item.text }}</span>
-                </li>
+    <section class="banner">
+        <div class="my_container">
+            <div class="banner-element" v-for="bannerElement in bluebarList">
+                <img src="../assets/img/buy-comics-merchandise.png" :alt="bannerElement.text + '\'s image'">
 
-            </ul>
+            </div>
+
         </div>
-    </div>
+
+    </section>
+
 </template>
 
-<style lang="scss" scoped>
-.wrapper {
-    height: 10rem;
-    background-color: #0282f9;
+<style lang="scss">
+@use '../styles/partials/variables' as *;
+
+.my_container {
+    display: flex;
+    height: 8.5rem;
+}
+
+section.banner {
+    
+    background-color: $main-color;
     color: white;
+
+    div.banner-element{
+        display:flex;
+        align-items: center;
+        margin-right: 2rem;
+    }
 }
 
 .flex {

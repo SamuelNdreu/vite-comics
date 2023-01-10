@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            navItems: [
+            menuItems: [
                 {
                     text: 'Characters',
                     active: false
@@ -57,27 +57,38 @@ export default {
             </div>
             <nav>
                 <ul>
-                    <li v-for="items in navItems">{{ items.text.toUpperCase() }}</li>
+                    <li v-for="menuItem in menuItems" :class="(menuItem.active) ? 'active' : ''"> {{ menuItem.text }}
+                    </li>
                 </ul>
             </nav>
         </div>
     </div>
 </template>
 
-<style scoped>
-    .wrapper {
-        width : 100%;
-        height : 100px;
-    }
-   .img-wrapper img{
-        width: 80px;
-   }
-   nav ul{
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper img {
+    width: 80px;
+}
+
+nav ul {
     display: flex;
     list-style-type: none;
-   }
-   ul li{
+}
+
+ul li {
     padding: 2.3rem .5rem;
-    border-bottom: .5rem solid transparent;
-   }
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    &.active{
+        border-bottom: 5px solid $main-color;
+    }
+}
 </style>
