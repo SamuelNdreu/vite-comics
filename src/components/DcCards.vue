@@ -5,12 +5,12 @@ export default {
         'price',
         'series',
         'type'
-    ]
+    ],
 }
 </script>
 
 <template>
-    <div>
+    <div class>
         <div class="img-wrapper">
             <img :src="thumbnail">
         </div>
@@ -19,9 +19,9 @@ export default {
 </template>
 
 <style lang="scss">
-    .img-wrapper{
-    margin-top: 1rem;
-    
-    overflow: hidden
-    }
+.img-wrapper {
+    background-color: #1c1c1c;
+
+    overflow: hidden;
+}
 </style>    

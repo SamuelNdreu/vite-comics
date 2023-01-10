@@ -52,7 +52,7 @@ export default {
 <template>
     <div class="container">
         <div class="container">
-            <div class="img-wrapper">
+            <div class="img-wrapper-logo">
                 <img src="../assets/img/dc-logo.png" alt="">
             </div>
             <nav>
@@ -72,7 +72,7 @@ export default {
     height: 100%;
 }
 
-.img-wrapper img {
+.img-wrapper-logo img {
     width: 80px;
 }
 

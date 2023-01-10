@@ -1,8 +1,8 @@
 <script>
-import DcCards from './components/DcCards.vue';
+import DcCards from './DcCards.vue';
 export default {
     components: {
-        AppCard,
+        DcCards,
     },
     data() {
         return {
@@ -88,6 +88,9 @@ export default {
 </script>
 
 <template>
+    <div class="wrapper-top">
+
+    </div>
     <div class="jumbo-wrapper">
         <div class="container">
         </div>
@@ -98,10 +101,9 @@ export default {
                 Current Series
             </h1>
             <div class="card-wrapper flex">
-
+                <DcCards class="comic-card" v-for="comic in comicsList" :thumbnail="comic.thumb" :price="comic.price"
+                    :series="comic.series" :type="comic.type" />
             </div>
-            <AppCard class="comic-card" v-for="comic in comicsList" :thumbnail="comic.thumb" :price="comic.price"
-                :series="comic.series" :type="comic.type" />
         </div>
         <h2> Load More</h2>
     </div>
@@ -116,5 +118,46 @@ export default {
     height: 25rem;
     background-image: url("../assets/img/jumbotron.jpg");
     color: white;
+}
+
+.comics-wrapper {
+    background-color: #1c1c1c;
+    height: 50rem;
+    color: white;
+}
+
+.comic-card {
+    width: calc((100% / 6) - 2rem);
+    
+    
+    margin-left: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    padding: 1rem;
+    width: 270px;
+    background-color: #0282f9;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 400px;
+    left: 200px;
+    font-size: 1rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #0282f9;
+    text-transform: uppercase;
+    width: 150px;
+    position: relative;
+    left: 58rem;
+    bottom: 5rem;
 }
 </style>
