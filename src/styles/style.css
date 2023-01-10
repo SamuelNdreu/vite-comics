@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}

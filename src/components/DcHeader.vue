@@ -57,7 +57,7 @@ export default {
             </div>
             <nav>
                 <ul>
-                    <li v-for="items in navItems">{{ items.text }}</li>
+                    <li v-for="items in navItems">{{ items.text.toUpperCase() }}</li>
                 </ul>
             </nav>
         </div>
@@ -65,17 +65,19 @@ export default {
 </template>
 
 <style scoped>
-.wrapper {
-    width: 100%;
-    height: 100px;
-}
-
-.img-wrapper img {
-    width: 80px;
-}
-
-nav ul {
+    .wrapper {
+        width : 100%;
+        height : 100px;
+    }
+   .img-wrapper img{
+        width: 80px;
+   }
+   nav ul{
     display: flex;
     list-style-type: none;
-}
+   }
+   ul li{
+    padding: 2.3rem .5rem;
+    border-bottom: .5rem solid transparent;
+   }
 </style>
