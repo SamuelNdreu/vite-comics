@@ -28,7 +28,7 @@ export default {
             }
         },
     methods: {
-        getImagePath: fuction (imgPath) {
+        getImagePath: function (imgPath) {
             return new URL (`../assets/img/${imgPath}`, import.meta.url).href;
         }
 
@@ -42,8 +42,10 @@ export default {
     <section class="banner">
         <div class="my_container">
             <div class="banner-element" v-for="bannerElement in bluebarList">
-                <img :src="getImagePath(bannerElement)" :alt="bannerElement.text + '\'s image'">
-                <h4>Merchandise</h4>
+                <img :src="getImagePath(bannerElement)" :alt="`${bannerElement.text}\'s image`">
+                <h4>
+                    {{ bannerElement.text }}
+                </h4>
             </div>
 
         </div>
