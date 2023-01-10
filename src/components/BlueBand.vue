@@ -1,31 +1,31 @@
 <script>
 export default {
     name: 'AppMain',
-    data() {
-        bluebarList: [
-            {
-                image: 'buy-comics-digital-comics.png',
-                text: 'DIGITAL COMICS'
-            },
-            {
-                image: 'buy-comics-merchandise.png',
-                text: 'DC MERCHANDISE'
-            },
-            {
-                image: 'buy-comics-subscription-png',
-                text: 'SUBSCRIPTION'
-            },
-            {
-                image: 'buy-comics-shop-locator.png',
-                text: ' COMICS SHOP LOCATOR'
-            },
-            {
-                image: 'buy-dc-power-visa.png',
-                text: 'DC POWER VISA'
-            }
-        ]
-    },
-}
+        data() {
+            bluebarList: [
+                {
+                    image: 'buy-comics-digital-comics.png',
+                    text: 'DIGITAL COMICS'
+                },
+                {
+                    image: 'buy-comics-merchandise.png',
+                    text: 'DC MERCHANDISE'
+                },
+                {
+                    image: 'buy-comics-subscription-png',
+                    text: 'SUBSCRIPTION'
+                },
+                {
+                    image: 'buy-comics-shop-locator.png',
+                    text: ' COMICS SHOP LOCATOR'
+                },
+                {
+                    image: 'buy-dc-power-visa.png',
+                    text: 'DC POWER VISA'
+                }
+            ]
+        }
+    }
 </script>
 
 
@@ -52,12 +52,11 @@ export default {
 }
 
 section.banner {
-    
     background-color: $main-color;
     color: white;
 
-    div.banner-element{
-        display:flex;
+    div.banner-element {
+        display: flex;
         align-items: center;
         margin-right: 2rem;
     }
