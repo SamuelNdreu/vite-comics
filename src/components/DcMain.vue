@@ -125,13 +125,16 @@ export default {
     height: 55rem;
     color: white;
     max-height: 100%;
+    padding-right: 5rem;
+    .comic-card {
+        width: calc((100% / 6) - 2rem);
+        
+        
+        margin-left: 1.5rem;
+    }
+    
 }
 
-.comic-card {
-    width: calc((100% / 6) - 2rem);
-    
-    margin-left: 1.5rem;
-}
 
 .flex {
     display: flex;
