@@ -25,5 +25,14 @@ export default {
     background-color: #1c1c1c;
     font-size: 0.7rem;
     overflow: hidden;
+    object-position: center;
+    h2 {
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 </style>    
